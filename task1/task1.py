@@ -24,3 +24,17 @@ Assumption made:
 3. Suffix may be put
 4. No middle name is ever provided
 """
+
+#defining a function to transform name field
+def name_transformation(x):
+    i = x.split(" ")
+    if len(i) == 2: # length of 2 must be first name & last name
+        return i[0] + " " + i[1];
+    elif len(i) == 4: # length of 4 must be prefix & first name & last name & suffix
+        return i[1] + " " + i[2];
+    elif len(i) == 3: # length of 3 must be prefix & first name & last name OR first name & last name & suffix
+        if (i[0].find(".") >= 0) or (i[0].find("Miss") >= 0):  #prefix & first name & last name
+            return i[1] + " " + i[2];
+        else: #first name & last name & suffix
+            return i[0] + " " + i[1];
+
