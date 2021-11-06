@@ -44,3 +44,5 @@ df_name_full = df_full['name'].str.split(expand=True)
 df_full["first_name"] = df_name_full[0]
 df_full["last_name"] = df_name_full[1]
 
+#Create a new field named above_100, which is true if the price is strictly greater than 100
+df_full["above_100"] = df_full['price']>100
