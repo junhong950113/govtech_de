@@ -10,3 +10,5 @@ df2 = df2[~df2["name"].isnull()]
 #Remove any zeros prepended to the price field; float type won't contain leading zeros
 df2['price']=df2['price'].astype(float)
 
+#concating both df into single df
+df_full = pd.concat([df1,df2], ignore_index=True)
