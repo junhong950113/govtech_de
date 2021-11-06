@@ -46,3 +46,8 @@ df_full["last_name"] = df_name_full[1]
 
 #Create a new field named above_100, which is true if the price is strictly greater than 100
 df_full["above_100"] = df_full['price']>100
+
+#final csv
+df_final = df_full[["first_name","last_name","price","above_100"]]
+
+df_final.to_csv("final_output.csv", index=False)
