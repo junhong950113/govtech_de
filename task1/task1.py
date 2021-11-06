@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 
 df1=pd.read_csv("dataset1.csv",dtype={'name': str, 'price': float}) #Remove any zeros prepended to the price field; float type won't contain leading zeros
 df2=pd.read_csv("dataset2.csv")
@@ -37,4 +36,11 @@ def name_transformation(x):
             return i[1] + " " + i[2];
         else: #first name & last name & suffix
             return i[0] + " " + i[1];
+
+df_full['name'] = df_full['name'].apply(name_transformation) #applying the transformation
+
+#splitting into first_name & last_name field
+df_name_full = df_full['name'].str.split(expand=True)
+df_full["first_name"] = df_name_full[0]
+df_full["last_name"] = df_name_full[1]
 
