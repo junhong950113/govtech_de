@@ -6,12 +6,12 @@ CREATE SCHEMA sales;
 
 CREATE TABLE sales.manufacturer (
 	id bigint PRIMARY KEY,
-	name varchar[255]
+	name varchar
 );
 
 CREATE TABLE sales.car_model (
 	id bigint PRIMARY KEY,
-	name varchar[255],
+	name varchar,
 	weight_kg float8,
 	manufacturer_id bigint,
 	CONSTRAINT fk_manufacturer FOREIGN KEY(manufacturer_id) REFERENCES sales.manufacturer(id)
@@ -19,7 +19,7 @@ CREATE TABLE sales.car_model (
 
 CREATE TABLE sales.car (
 	id bigint PRIMARY KEY,
-	serial_number varchar[255],
+	serial_number varchar,
 	original_price float8,
 	model_id bigint,
 	CONSTRAINT fk_car_model FOREIGN KEY(model_id) REFERENCES sales.car_model(id)
@@ -27,12 +27,12 @@ CREATE TABLE sales.car (
 
 CREATE TABLE sales.salesperson (
 	id bigint PRIMARY KEY,
-	name varchar[255]
+	name varchar
 );
 
 CREATE TABLE sales.customer (
 	id bigint PRIMARY KEY,
-	name varchar[255],
+	name varchar,
 	phone bigint
 );
 
