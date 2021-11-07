@@ -1,4 +1,6 @@
-
+# Basic Introduction
+- This public repo is set up for Yap Choon Hong to deploy answer to govtech data engineer tech assessment
+- Feel free to contact me [here](mailto:hong950113@gmail.com) for any discussion, Thank you!
 
 ***
 # Below is the original task instruction
