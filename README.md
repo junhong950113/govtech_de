@@ -2,6 +2,13 @@
 - This public repo is set up for Yap Choon Hong to deploy answer to govtech data engineer tech assessment
 - Feel free to contact me [here](mailto:hong950113@gmail.com) for any discussion, Thank you!
 
+# Progress
+- Task1: Completed
+- Task2: Completed
+- Task3: Completed
+- Task4: Completed
+- Task5: WIP
+
 ***
 Below is the original task instruction
 ***
