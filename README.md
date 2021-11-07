@@ -7,7 +7,7 @@
 - Task2: Completed
 - Task3: Completed
 - Task4: Completed
-- Task5: WIP
+- Task5: Completed
 
 ***
 Below is the original task instruction
